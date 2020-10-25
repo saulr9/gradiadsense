@@ -1,0 +1,154 @@
+/**
+* 2007-2020 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2020 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+.gradiadsense_banner {
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+
+}
+.gradiadsense_background {
+    min-height: 300px;
+    width: 100%;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: absolute;
+    transition: 0.5s;
+}
+.gradiadsense_banner .gradiadsense_text {
+    position: relative;
+    z-index: 20;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.gradiadsense_banner .gradiadsense_text a{
+    background: #fff;
+    padding: 10px 30px;
+    color: #000;
+    min-width: 206px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: .25s;
+    
+}
+.gradiadsense_banner .gradiadsense_text a:hover {
+    transform: translate3d(-5px, -5px, 0px);
+    box-shadow: 5px 5px 5px rgb(239 239 239 / 80%);
+}
+.gradiadsense_banner .gradiadsense_text p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.gradiadsense_banner:before {
+    content: "";
+    display: flex;
+    margin: 0 auto;
+    border: 2px solid rgba(255,255,255, .7);
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    z-index: 10;
+    transition: 0.5s;
+
+}
+.gradiadsense_banner.overlay::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 3;
+    
+}
+.gradiadsense_banner:hover .gradiadsense_background {
+    transform: scale(1.2);
+}
+.gradiadsense_banner:hover::before {
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+.ZoomText {
+    -webkit-animation: ZoomText 5s infinite linear;
+    -moz-animation: ZoomText 5s infinite linear;
+    -ms-animation: ZoomText 5s infinite linear;
+    -o-animation: ZoomText 5s infinite linear;
+    animation: ZoomText 5s infinite linear;
+  }
+@-webkit-keyframes ZoomText {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+  }
+  @-moz-keyframes ZoomText {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+  }
+  @-ms-keyframes ZoomText {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+  }
+  @-o-keyframes ZoomText {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+  }
+  @keyframes ZoomText {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+  }

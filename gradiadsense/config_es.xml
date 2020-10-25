@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>gradiadsense</name>
+	<displayName><![CDATA[Gradi Adsense]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[
+Muestra un banner publicitarion en Home]]></description>
+	<author><![CDATA[Saul Ramos]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
